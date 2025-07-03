@@ -1,5 +1,3 @@
-
-import './App.css'
 import About from './Components/About.jsx'
 import Domains from './Components/Domains.jsx'
 import Header from './Components/Header.jsx'
@@ -11,12 +9,12 @@ function App() {
 
   return (
     <>
-        <Header/>
-        <About/>
-        <Outlets/>
-       <Domains/>
-        <Technology/>
-      </>
+      <Header />
+      <About />
+      <Outlets />
+      <Domains />
+      <Technology />
+    </>
   )
 }
 
