@@ -1,4 +1,4 @@
-import logo from "../assets/hei.logo.png"
+import logo from "../assets/hei_logo.png"
 
 function Header() {
     return(
