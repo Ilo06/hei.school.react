@@ -1,12 +1,14 @@
+
 import './App.css'
 import Header from './Components/Header.jsx'
-import About from "./Components/About.jsx";
+import Outlets from './Components/Outlets.jsx'
 
 function App() {
-    return (
+
+  return (
     <>
         <Header/>
-        <About/>
+        <Outlets/>
     </>
   )
 }
