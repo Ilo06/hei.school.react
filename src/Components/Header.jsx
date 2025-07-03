@@ -3,7 +3,7 @@ import logo from "../assets/hei_logo.png"
 function Header() {
     return(
         <>
-            <header className="flex row justify-between items-center px-12 py-3  bg-primary-color">
+            <header className="flex row justify-between items-center px-12 py-3 bg-primary-color">
                 <img src={logo} width={75} height={75}/>
                 <div className="links text-white">
                     <ul className="flex row gap-10 items-center ">
