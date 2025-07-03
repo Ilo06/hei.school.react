@@ -4,17 +4,18 @@
 
 @theme{
     --color-primary-color: #001948;
-  --color-secondary-color: #dfa408;
-  --font-garamond: 'EB Garamond', serif; 
+    --color-secondary-color: #dfa408;
+    --color-secondary-white: #f1f1f1 ;
+    --font-garamond: 'EB Garamond', serif;
 
 }
-#root{
+#root {
     padding: 0% !important;
 }
 
 .eb-garamond {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
