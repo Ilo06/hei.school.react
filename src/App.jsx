@@ -7,6 +7,7 @@ import Partner from "./Components/Partner.jsx";
 import Admission from "./Components/Admission.jsx";
 import Homepage from './Components/Homescreen.jsx';
 import Team from './Components/Team.jsx';
+import Footer from './Components/Footer.jsx';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Admission/>
             <Technology/>
             <Partner/>
+            <Footer/>
         </>
     );
 }
