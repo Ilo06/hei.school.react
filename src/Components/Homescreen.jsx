@@ -43,10 +43,8 @@ function HeroCarousel() {
                                 backgroundImage: `url(${slide.backgroundImage})`,
                             }}
                         >
-                            {/* Overlay sombre */}
                             <div className="absolute inset-0 bg-black bg-opacity-60" />
 
-                            {/* Contenu */}
                             <div className="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 space-y-6 text-white">
                                 <h1 className="text-6xl font-serif drop-shadow-lg eb-garamond mb-15">
                                     {slide.title}
