@@ -5,7 +5,11 @@
 @theme{
     --color-primary-color: #001948;
     --color-secondary-color: #dfa408;
-    --color-secondary-white: #f1f1f1 ;
+    --color-tertiary-color: #6586C7;
+    --color-secondary-white: #f1f1f1;
+    --color-admission-first : #FCDFB5;
+    --color-admission-second : #F7D090;
+    --color-admission-third : #F1C16B;
     --font-garamond: 'EB Garamond', serif;
 
 }
