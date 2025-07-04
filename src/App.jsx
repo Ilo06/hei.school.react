@@ -7,6 +7,8 @@ import Partner from "./Components/Partner.jsx";
 import Admission from "./Components/Admission.jsx";
 import Homepage from './Components/Homescreen.jsx';
 import Team from './Components/Team.jsx';
+import Program from "./Components/Program.jsx";
+import Learning from "./Components/Learning.jsx";
 import Footer from './Components/Footer.jsx';
 
 
@@ -21,6 +23,8 @@ function App() {
             <Outlets/>
             <Domains/>
             <Admission/>
+            <Program/>
+            <Learning/>
             <Technology/>
             <Partner/>
             <Footer/>
