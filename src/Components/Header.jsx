@@ -7,7 +7,7 @@ function Header() {
                 <img src={logo} width={75} height={75}/>
                 <div className="links text-white">
                     <ul className="flex row gap-10 items-center ">
-                        <li className="font-bold hover:text-secondary-color transition-all"><a href="http://">ACCUEIL</a></li>
+                        <li className="font-bold text-secondary-color hover:text-secondary-color transition-all"><a href="http://">ACCUEIL</a></li>
                         <li className="font-bold hover:text-secondary-color transition-all"><a href="http://">ACTUALITÉS</a></li>
                         <li className="font-bold hover:text-secondary-color transition-all"><a href="http://">BOURSE D'ÉTUDES</a></li>
                         <li className="font-bold hover:text-secondary-color transition-all"><a href="http://">INSCRIPTION</a></li>
