@@ -9,6 +9,7 @@ import Homepage from './Components/Homescreen.jsx';
 import Team from './Components/Team.jsx';
 import Program from "./Components/Program.jsx";
 import Learning from "./Components/Learning.jsx";
+import Footer from './Components/Footer.jsx';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Learning/>
             <Technology/>
             <Partner/>
+            <Footer/>
         </>
     );
 }
