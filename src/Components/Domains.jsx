@@ -7,7 +7,7 @@ import software from "../assets/software.png"
 function Domains() {
     return (
         <>
-            <section className="bg-gray-100 mt-5 py-15">
+            <section className="bg-secondary-white my-5 py-15">
                 <h1 className="text-5xl text-primary-color eb-garamond">Domaines</h1>
                 <p className="text-center text-primary-color my-4 text-lg mb-15">Au cours de vos trois ans de formation, naviguez entre les domaines les plus porteurs du numérique du présent et de l’avenir :</p>
                 <div className="cards_holder flex row align-middle justify-center gap-5 px-18">
