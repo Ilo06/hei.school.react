@@ -64,3 +64,12 @@ p{
 .swiper-button-prev:hover {
   color: rgba(0, 0, 0, 0.788) !important;
 }
+
+/* .swiper-button-next{
+    left: 30px !important;
+    z-index: 9999 !important;
+}
+.swiper-button-prev {
+    right: 30px !important;
+    z-index: 9999 !important;
+} */
