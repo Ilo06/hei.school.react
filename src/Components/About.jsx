@@ -2,7 +2,7 @@ import about_image from "../assets/about_image.webp"
 function About(){
     return(
         <>
-            <div className="about flex align-middle justify-center row gap-10 bg-white text-primary-color px-10 py-5">
+            <div className="about flex align-middle justify-center row gap-10 w-[95vw] mx-auto bg-white text-primary-color px-10 py-5">
                 <div className='about__image flex-1/2 pt-15 h-36'>
                     <img src={about_image} alt="about_image"/>
                 </div>
