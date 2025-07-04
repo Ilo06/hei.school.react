@@ -1,26 +1,28 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import cover from '../assets/coverimage.jpg';
+import banner1 from '../assets/hei-banner-1.webp';
+import banner2 from '../assets/hei-banner-2.webp';
+import banner3 from '../assets/hei-banner-3.webp';
 
 function HeroCarousel() {
     const slides = [
         {
             title: "Haute École d'Informatique",
             description: '«Des entreprises partenaires et une équipe pédagogique et administrative qui travaille sans relâche pour la montée en compétences de nos étudiants.»',
-            backgroundImage: cover,
+            backgroundImage: banner1,
         },
         {
             title: "Haute École d'Informatique",
             description: '«Une infrastructure de qualité et un programme pédagogique qui répond au besoin du marché pour l’employabilité de nos étudiants.»',
-            backgroundImage: cover, 
+            backgroundImage: banner2, 
         },
         {
             title: "Haute École d'Informatique",
             description: '« L’éducation est l’arme la plus puissante pour changer le monde » selon Nelson Mandela. « L’éducation dans l’informatique est une arme très puissante pour lutter contre la pauvreté à Madagascar » selon HEI. C’est notre mission.»',
-            backgroundImage: cover, 
+            backgroundImage: banner3, 
         },
     ];
 
@@ -28,19 +30,20 @@ function HeroCarousel() {
     return (
         <div className="w-full h-screen">
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
                 navigation
                 pagination={{ clickable: true }}
                 loop
                 className="w-full h-full"
-                style={{ height: '100%' }} 
+                style={{ height: '100%' }}
+                autoplay={{ delay: 6000, disableOnInteraction: false }}
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div
                             className="relative w-full h-screen bg-cover bg-center"
                         >
-                            <div className="absolute inset-0 bg-black/20 z-10" />
+                            <div className="absolute inset-0 bg-black/50 z-10" />
                             <div className='absolute inset-0 w-screen h-screen'>
                                 <img src={slide.backgroundImage} />
                             </div>

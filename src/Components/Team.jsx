@@ -1,6 +1,6 @@
 // src/components/TeamCarousel.jsx
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Navigation, Pagination} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -79,28 +79,34 @@ export default function TeamCarousel() {
             </p>
 
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
                 navigation
-                pagination={{clickable: true}}
-                spaceBetween={30}
+                pagination={{ clickable: true }}
+                spaceBetween={0}
                 slidesPerView={1}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                // centeredSlides={true}    
                 breakpoints={{
-                    768: {slidesPerView: 2},
-                    1024: {slidesPerView: 3},
-                }}
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                }} className='w-[80vw] overflow-visible'
             >
                 {teamMembers.map((member, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="bg-white text-gray-900 rounded-xl p-6 mx-4 shadow-lg h-[434px] w-2xs ">
-                            <img
-                                src={member.photo}
-                                alt={member.name}
-                                className="w-52 h-52 rounded-full mx-auto mb-4 object-cover border-4 border-gray-300"
-                            />
-                            <h3 className="font-bold text-2xl eb-garamond">{member.name}</h3>
-                            <p className="text-sm mt-2 helvetica">{member.title}</p>
-                            {member.location && <p className="text-xs text-gray-500 mt-1">{member.location}</p>}
+
+                    <SwiperSlide key={index} className='flex justify-center items-center '>
+                        <div className='w-full h-full flex justify-center items-center'>
+                            <div className="bg-white text-gray-900 rounded-xl p-6 mx-4 shadow-lg h-[434px]  ">
+                                <img
+                                    src={member.photo}
+                                    alt={member.name}
+                                    className="w-52 h-52 rounded-full mx-auto mb-4 object-cover border-4 border-gray-300"
+                                />
+                                <h3 className="font-bold text-2xl eb-garamond">{member.name}</h3>
+                                <p className="text-sm mt-2 helvetica">{member.title}</p>
+                                {member.location && <p className="text-xs text-gray-500 mt-1">{member.location}</p>}
+                            </div>
                         </div>
+
                     </SwiperSlide>
                 ))}
             </Swiper>
