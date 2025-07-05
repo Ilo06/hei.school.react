@@ -32,7 +32,7 @@ function Footer() {
                 </div>
 
             </section>
-            <p className='bg-secondary-white text-gray-600 font-bold text-lg py-2.5'>© HEI Madagascar</p>
+            <p className='bg-secondary-white text-gray-600 font-bold text-lg py-2.5'>{new Date().getUTCFullYear()} © HEI Madagascar</p>
         </>
     );
 }
